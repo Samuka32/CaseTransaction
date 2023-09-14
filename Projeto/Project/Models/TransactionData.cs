@@ -10,17 +10,17 @@ namespace Projeto.Models
     {
         public int CorrelationId { get; }
         public string DateTime { get; }
-        public long ContaOrigem { get; }
-        public long ContaDestino { get; }
-        public decimal Valor { get; }
+        public long OriginAccount { get; }
+        public long DestinationAccount { get; }
+        public decimal Value { get; }
 
-        public TransactionData(int correlationId, string dateTime, long contaOrigem, long contaDestino, decimal valor)
+        public TransactionData(int correlationId, string dateTime, long originAccount, long destination, decimal value)
         {
             CorrelationId = correlationId;
             DateTime = dateTime;
-            ContaOrigem = contaOrigem;
-            ContaDestino = contaDestino;
-            Valor = valor;
+            OriginAccount = originAccount;
+            DestinationAccount = destination;
+            Value = value;
         }
     }
 }

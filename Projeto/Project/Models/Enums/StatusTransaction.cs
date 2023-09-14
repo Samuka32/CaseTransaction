@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Models.Enums
 {
-    public enum StatusTransacao
+    public enum StatusTransaction
     {
         Success,
         InsufficientFunds,

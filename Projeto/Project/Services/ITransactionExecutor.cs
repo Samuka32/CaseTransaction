@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projeto.Interfaces
+namespace Projeto.Services
 {
     public interface ITransactionExecutor
     {
-        void ExecuteTransaction(TransactionData transactionData);
+        void ProcessTransaction(TransactionData transactionData);
     }
 }

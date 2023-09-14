@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace Projeto.Interfaces
+namespace Projeto.Commons.Logger
 {
     public interface ITransactionLogger
     {
-        void LogTransaction(TransactionData transactionData, StatusTransacao status);
+        void LogTransaction(TransactionData transactionData, StatusTransaction status);
+        void LogTransactionError(TransactionData transactionData, Exception e);
     }
 }

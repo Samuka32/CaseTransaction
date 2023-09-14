@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projeto.Interfaces
+namespace Projeto.Repository
 {
     public interface IDataAccess
     {
-        T GetSaldo<T>(long conta) where T : ContaSaldo;
-        bool Update(ContaSaldo dado);
+        T GetBalance<T>(long number) where T : Account ;
+        void Update(Account data);
     }
 }
